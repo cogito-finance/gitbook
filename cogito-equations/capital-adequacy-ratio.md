@@ -1,52 +1,19 @@
----
-description: An in-depth explanation of Cogito's core concepts
----
+# Risk Management
 
-# Capital Adequacy Ratio
+Cogito Finance prioritizes risk management and transparency. Investors are provided with comprehensive risk disclosures, ensuring they understand the potential risks associated with each investment product.
 
-One of the key characteristics of the protocol is that when users deposit crypto assets and mint tracercoins, the underlying crypto assets are split in two reserves. This split is determined by the **Capital Adequacy Ratio (CAR)**.&#x20;
+## Smart Contract Risk
 
-The CAR is the core essence of Cogito that provides pragmatic guidance for treasury allocation, risk management, token buyback, and protocol growth. It ensures that capital of the protocol is kept at a level sufficient to absorb losses and counteract negative events, in order to protect users and ensure stability.
+Smart contracts are a new form of financial settlement technology that operates on blockchain platforms. While they offer transparency and efficiency, their code can be vulnerable to hacks and exploits. With Cogito Finance, the Vault smart contracts are built upon well-established code standards that have been battle-tested and widely adopted. However, no smart contract is entirely immune to security vulnerabilities. Cogito encourages investors to conduct thorough due diligence and understand the underlying technology before investing.
 
-As mentioned earlier, the reserve consists of a liquid and illiquid component. We assign a risk discounting factor for each asset based on the associated risks and liquidity. The discounting factors are based on three major risks:&#x20;
+## Interest Rate Risk
 
-* Counterparty risk associated with stablecoins, i.e. a counterparty (e.g. a farming or a lending protocol) fails to repay the full amount of USDC we’ve deposited.
-* Market risk associated with losses due a decrease in the value of investments. It applies to all trading book products.&#x20;
-* Operational risk resulting from inadequate or failed internal processes, people and systems, or from external events, for example hacking or exploits to our system.&#x20;
+Investing in the fund vault exposes investors to interest rate risk. If interest rates rise, the value of the vault’s portfolio and the fund token’s exchange rate may generally decline. Conversely, if interest rates decrease, the portfolio value and token exchange rate may rise. The Cogito Finance mitigates this risk by offering a target weighted-average maturity of 3 to 6 months for the TFUND portfolio and a green bond index fund with a shorter maturity for GFUND. This approach aims to reduce the sensitivity of the portfolio to fluctuations in interest rates.
 
-The Cogito team has developed a scorecard system to determine the discounting factors, where metrics include project performance, historical price volatility, track record of security, and other factors. The scorecard will be managed by the Cogito treasury investment board and be updated regularly for public review.
+## Credit Risk
 
-Similarly, the liability of the protocol is assigned a time factor depending on the tenor of deposits placed in the ADP. The CAR is calculated as follows:
+The vault invests in fixed-income securities, which are backed by the “full faith and credit” of the issuer, such as U.S. Treasury Bills where the credit risk lies with the U.S. Federal Government. There is a certain level of credit risk associated with the issuer, e.g. If the credit risk of the U.S. government were to rise, it could impact the volatility of the vault’s portfolio value and, consequently, the fund token’s exchange rate. Investors should be aware of this inherent risk when considering investments.
 
-$$
-CapitalAdequacyRatio(CAR) = \frac{RiskWeightedCapital}{TenorWeightedDebt} = \frac{\sum\nolimits_{i}^n A_i*df_i }{\sum\nolimits_{j}^m L_j*tw_j * e }
-$$
+## Liquidity Risk
 
-$$A_i$$ is  is the market value of asset i in the reserve.
-
-​$$df_i$$is the respective discounting factor for asset $$i$$.
-
-$$L_j$$is the amount of tracercoins outstanding.
-
-$$tw_j$$is the time weighting factor of a given tracercoin.
-
-​$$e$$ is the exchange rate of the tracercoin to stablecoins
-
-## ​CAR in practice
-
-As an illustration, assume the reserve includes a liquid reserve of 100 USDC, an illiquid reserve of 100 USDC deposit in a credited platform (e.g. AAVE) for 6 months, and an illiquid reserve of BTC with a market value of 100 USDC. On the other hand, outstanding tracercoin is 300 GCOIN, of which 100 in users' wallets, 200 in ADP for 12 months. GCOIN price is 1.02 USDC.
-
-We establish that liquid reserves have a 100% discounting factor, meaning we don’t discount it at all. Medium-term investments ( 6 monthsTenor<12 months) have a 95% discounting factor and blue-chip risky assets have a 60% discounting factor. Meanwhile, liabilities with 1-year tenor carry a time factor of 88%, i.e. we discount it by 12%, which is the Time Value of Money (TVM) indicating the current value of future cash flows.
-
-| Illiquid reserve - USDC deposit for 6 months | 100 \* 95% = 95             |
-| -------------------------------------------- | --------------------------- |
-| Illiquid reserve - BTC                       | 100 \* 60% = 60             |
-| GCOIN in the user's wallet                   | 100 \* 100% = 100           |
-| GCOIN deposited for 12 months                | 200 \* 88% = 176            |
-| Total Risk-Weighted Asset (USDC)             | 100 + 95 + 60 = 255         |
-| Total Tenor Weighted Liability (USDC)        | (100 + 176) \* 1.02 = 281.5 |
-| CAR                                          | 255 / 281.5 = 90.6%         |
-
-CAR directly impacts the risk tolerance and investment decisions of the protocol. The ASF monitors the CAR continuously and adjusts strategies through what we call a “defensive mechanism” to ensure the CAR is kept at a satisfactory level.
-
-During the full collateralization phase, the CAR is expected to be running between 90% to 110%. When the CAR is much higher (>110%), the ASF will allocate more reserves to illiquid components, and invest in higher risk protocols or assets to generate higher yields. When the CAR drops below 90%, the program will be more risk-off and invest in safer products; in the meantime, the protocol will divert the ongoing revenue to liquid reserves to supplement capital. If the CAR drops further to below 75%, the protocol will halt interest distribution and build up reserves until the CAR recovers. In drastic scenarios where the CAR drops below 50% — even though this may not warrant a depeg or failure of the tracercoins — we will trigger the distribution of retained profits or sell off reserves to defend the CAR. When the system is running as a risk-weighted-reserve, we aim to achieve a CAR ratio of at least 75%, which is the safety ratio to prevent substantial bank runs in most of our stress tests. This is much more prudent than traditional banks where regulation requires the banks’ CAR (which is defined similarly as our approach) to be only a minimum of 8%!
+During periods of heightened volatility in the fixed-income market or during large redemption requests, investors may face market liquidity risk. In such scenarios, the Vault may be forced to sell its bond holdings below the mark-to-market price to meet redemptions, potentially impacting the portfolio’s overall value. To mitigate the impact of such price volatility, funds will diversify their holdings across different maturities. Additionally, the fund will secure credit lines from market makers to accommodate redemptions without causing massive sell-offs.
