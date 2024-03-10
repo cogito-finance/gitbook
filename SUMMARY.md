@@ -1,26 +1,29 @@
 # Table of contents
 
-* [Cogito Protocol](README.md)
+* [Cogito Finance](README.md)
 
 ## INTRODUCTION
 
-* [Market context](introduction/market-context.md)
-* [Cogito in a nutshell](introduction/cogito-in-a-nutshell.md)
-* [Overview of stablecoins](introduction/overview-of-stablecoins.md)
-* [Price stabilization mechanisms](introduction/price-stabilization-mechanisms.md)
+* [RWA Tokenization](introduction/rwa-tokenization.md)
+* [Benefits of Onchain Assets](introduction/benefits-of-onchain-assets.md)
+* [Challenges in Decentralized Finance](introduction/challenges-in-decentralized-finance.md)
+* [Artificial Intelligence for Tokenized Assets](introduction/artificial-intelligence-for-tokenized-assets.md)
+* [Risk Management](introduction/risk-management.md)
+* [Roadmap](introduction/roadmap.md)
 
-## COGITO FUNDAMENTALS
+## Cogito Products
 
-* [Origins](cogito-fundamentals/origins.md)
-* [Design](cogito-fundamentals/design.md)
-* [The Index](cogito-fundamentals/the-index.md)
+* [TFUND - Treasury Fund](cogito-products/tfund-treasury-fund.md)
+* [GFUND - Green Bond Fund](cogito-products/gfund-green-bond-fund.md)
+* [XFUND - AI/Tech Equity Fund](cogito-products/xfund-ai-tech-equity-fund.md)
+* [cgvUSDC](cogito-products/cgvusdc.md)
+* [FAQ](cogito-products/faq.md)
 
-## COGITO EQUATIONS
+## Useful links
 
-* [Capital Adequacy Ratio](cogito-equations/capital-adequacy-ratio.md)
-* [ADP and reserve management](cogito-equations/adp-and-reserve-management.md)
-* [ASP and open market operations](cogito-equations/asp-and-open-market-operations.md)
-
-## CONCLUSION
-
-* [Conclusion](conclusion/conclusion.md)
+* [Social Media](useful-links/social-media/README.md)
+  * [X (Twitter)](https://twitter.com/CogitoFi)
+  * [LinkedIn](https://www.linkedin.com/company/cogito-finance/)
+  * [Telegram](https://t.me/joincogito)
+  * [Github](https://github.com/cogito-finance)
+  * [Medium](https://medium.com/@CogitoFinance)
