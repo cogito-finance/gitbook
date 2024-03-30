@@ -27,3 +27,10 @@
   * [Telegram](https://t.me/joincogito)
   * [Github](https://github.com/cogito-finance)
   * [Medium](https://medium.com/@CogitoFinance)
+
+## Legal
+
+* [Disclaimers](legal/disclaimers.md)
+* [Terms and Conditions](legal/terms-and-conditions.md)
+* [Privacy Policy](legal/privacy-policy.md)
+* [Cookie Policy](legal/cookie-policy.md)
