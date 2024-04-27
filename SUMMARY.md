@@ -19,6 +19,10 @@
 * [cgvUSDC](cogito-products/cgvusdc.md)
 * [FAQ](cogito-products/faq.md)
 
+## Technical Details
+
+* [Contract Addresses](technical-details/contract-addresses.md)
+
 ## Useful links
 
 * [Social Media](conclusion/conclusion.md)
