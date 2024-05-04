@@ -25,12 +25,11 @@
 
 ## Useful links
 
-* [Social Media](conclusion/conclusion.md)
-  * [X (Twitter)](https://twitter.com/CogitoFi)
-  * [LinkedIn](https://www.linkedin.com/company/cogito-finance/)
-  * [Telegram](https://t.me/joincogito)
-  * [Github](https://github.com/cogito-finance)
-  * [Medium](https://medium.com/@CogitoFinance)
+* [X (Twitter)](https://twitter.com/CogitoFi)
+* [LinkedIn](https://www.linkedin.com/company/cogito-finance/)
+* [Telegram](https://t.me/joincogito)
+* [Github](https://github.com/cogito-finance)
+* [Medium](https://medium.com/@CogitoFinance)
 
 ## Legal
 
